@@ -9,13 +9,14 @@ import SwiftUI
 
 struct MedicineListScreen: View {
     @State private var addMedicineScreen: Bool = false
+    @StateObject var notficationVM = NotificationListViewModel()
     @StateObject var medicineListVM =  MedicineListViewModel()
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(medicineListVM.medicines,id:\.medicineId) { medicine in
-                    NavigationLink(destination: MedicineDetailScreen(medicineListVM: medicineListVM, medicine: medicine)) {
+                    NavigationLink(destination: MedicineDetailScreen(medicineListVM: medicineListVM, notficationVM: notficationVM, medicine: medicine)) {
                         Text(medicine.name)
                     }
                 }.onDelete(perform: deleteMedicine)
@@ -38,7 +39,8 @@ struct MedicineListScreen: View {
             }
             .onAppear {
                 medicineListVM.fetchAllMedicines()
-              
+                NotificationManager.instances.removeAllDelviredNotification()
+                NotificationManager.instances.getAllPendingNotification()
             }
         }
     }
@@ -46,8 +48,11 @@ struct MedicineListScreen: View {
     private func deleteMedicine(at indexSet:IndexSet) {
         indexSet.forEach { index in
             let medicine = medicineListVM.medicines[index]
+            notficationVM.fetchAllNotfications(medVM: medicine)
+            notficationVM.deleteAllNotification()
             medicineListVM.deleteMedecine(medVM: medicine)
             medicineListVM.fetchAllMedicines()
+            
         }
     }
 }

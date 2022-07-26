@@ -10,6 +10,7 @@ import SwiftUI
 struct MedicineDetailScreen: View {
     @ObservedObject var medicineListVM : MedicineListViewModel
     @StateObject var addHistoryVM = AddHistoryViewModel()
+    @ObservedObject var notficationVM:  NotificationListViewModel
     let medicine:MedicineViewModel
     var body: some View {
         VStack {
@@ -25,12 +26,22 @@ struct MedicineDetailScreen: View {
                     intake in
                     Text("Intake Time: \(intake.time)")
                 }
+                
+                VStack {
+                    Text("Notification ")
+                    ForEach(notficationVM.notifcations,id:\.notifcationID) { notification in
+                        Text("NotificationID : \(notification.notifcationID)")
+                        Text("MedicineID : \(notification.medicineId)")
+                    }
+                }
             }
             Button(action: {
                 
                 var med:MedicineViewModel
                 if Int(medicine.count)!  == 1 {
                     med = medicine
+                    notficationVM.fetchAllNotfications(medVM: medicine)
+                    notficationVM.deleteAllNotification()
                     medicineListVM.deleteMedecine(medVM: medicine)
                     addHistoryVM.saveHistory(medVM: med)
                 } else {
@@ -41,6 +52,8 @@ struct MedicineDetailScreen: View {
                
                 medicineListVM.fetchAllMedicines()
                 
+                
+                
             }) {
                 Text("Take")
                     .font(.headline)
@@ -49,12 +62,15 @@ struct MedicineDetailScreen: View {
         }
         .onAppear {
             medicineListVM.fetchAllIntakes(medicine: medicine)
+            notficationVM.fetchAllNotfications(medVM: medicine)
     }
     }
 }
 
 struct MedicineDetailScreen_Previews: PreviewProvider {
     static var previews: some View {
-        MedicineDetailScreen(medicineListVM: MedicineListViewModel(), medicine: MedicineViewModel(medicine: Medicine(context: CoreDataManager.shared.viewContext)))
+        MedicineDetailScreen(medicineListVM: MedicineListViewModel(), notficationVM: NotificationListViewModel(), medicine: MedicineViewModel(medicine: Medicine(context: CoreDataManager.shared.viewContext)))
     }
 }
+
+

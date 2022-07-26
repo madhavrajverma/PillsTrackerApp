@@ -24,6 +24,8 @@ extension Medicine {
     @NSManaged public var type: String?
     @NSManaged public var intakes: NSSet?
     @NSManaged public var notifications: NSSet?
+    @NSManaged public var medicineId:String
+    
 
 }
 

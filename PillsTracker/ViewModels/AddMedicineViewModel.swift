@@ -40,7 +40,9 @@ class AddMedicineViewModel : ObservableObject {
     func saveMedicine() {
         
         let medicine = Medicine(context: CoreDataManager.shared.viewContext)
+        let medicineId = UUID().uuidString
         medicine.name = name
+        medicine.medicineId = medicineId
         medicine.days = Int16(days) ?? 0
         medicine.medicineType = type
         medicine.desc = description
@@ -78,7 +80,7 @@ class AddMedicineViewModel : ObservableObject {
                         self.intaksArray.append(self.intake1)
                         self.intaksArray.append(self.intake2)
                     }
-                    await NotificationManager.instances.scheduleNotifications(medicine: medicine, intakes: self.intaksArray)
+                    await NotificationManager.instances.scheduleNotifications(medicine: medicine, intakes: self.intaksArray,medicineId:medicineId)
                 }
             }
         }

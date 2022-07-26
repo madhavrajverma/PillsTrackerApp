@@ -50,6 +50,7 @@ class MedicineListViewModel: ObservableObject {
     }
     
     func deleteMedecine(medVM:MedicineViewModel) {
+            
             let medicine  = Medicine.medicineById(id: medVM.medicineId)
             if let medicine = medicine {
                 Medicine.delete(medicine: medicine)

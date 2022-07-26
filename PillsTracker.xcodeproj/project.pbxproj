@@ -35,7 +35,7 @@
 		D4D171922890656700DC6DF8 /* NotificationModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D171912890656700DC6DF8 /* NotificationModel+Extension.swift */; };
 		D4D17195289065B600DC6DF8 /* Medicine+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D17193289065B600DC6DF8 /* Medicine+CoreDataClass.swift */; };
 		D4D17196289065B600DC6DF8 /* Medicine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D17194289065B600DC6DF8 /* Medicine+CoreDataProperties.swift */; };
-		D4D1719828906B0500DC6DF8 /* AddNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D1719728906B0500DC6DF8 /* AddNotificationViewModel.swift */; };
+		D4D1719A28906F4500DC6DF8 /* NotficationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D1719928906F4500DC6DF8 /* NotficationListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +68,7 @@
 		D4D171912890656700DC6DF8 /* NotificationModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationModel+Extension.swift"; sourceTree = "<group>"; };
 		D4D17193289065B600DC6DF8 /* Medicine+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medicine+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D4D17194289065B600DC6DF8 /* Medicine+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medicine+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D4D1719728906B0500DC6DF8 /* AddNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotificationViewModel.swift; sourceTree = "<group>"; };
+		D4D1719928906F4500DC6DF8 /* NotficationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotficationListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +149,7 @@
 				D4BE4D7B288ED237000D03CB /* MedicineListViewModel.swift */,
 				D4BE4D97288FE960000D03CB /* AddHistoryViewModel.swift */,
 				D4BE4D9F289018AA000D03CB /* HistoryListViewModel.swift */,
-				D4D1719728906B0500DC6DF8 /* AddNotificationViewModel.swift */,
+				D4D1719928906F4500DC6DF8 /* NotficationListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -268,9 +268,9 @@
 				D4BE4D78288ED1B3000D03CB /* Medicine+Extension.swift in Sources */,
 				D4BE4D80288EFC53000D03CB /* NotificationManager.swift in Sources */,
 				D4BE4D39288E7F78000D03CB /* ContentView.swift in Sources */,
-				D4D1719828906B0500DC6DF8 /* AddNotificationViewModel.swift in Sources */,
 				D4BE4D91288FC095000D03CB /* Intake+CoreDataClass.swift in Sources */,
 				D4BE4D7E288ED61E000D03CB /* AddMedicineScreen.swift in Sources */,
+				D4D1719A28906F4500DC6DF8 /* NotficationListViewModel.swift in Sources */,
 				D4D17195289065B600DC6DF8 /* Medicine+CoreDataClass.swift in Sources */,
 				D4BE4D86288FAF85000D03CB /* Intakes+Extension.swift in Sources */,
 				D4BE4D96288FDB83000D03CB /* MedicineHistoryScreen.swift in Sources */,

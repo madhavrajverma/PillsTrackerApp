@@ -41,7 +41,7 @@ class NotificationManager :NSObject {
         }
     }
     
-    func scheduleNotifications(medicine:Medicine,intakes:[Date]) async {
+    func scheduleNotifications(medicine:Medicine,intakes:[Date],medicineId:String) async {
     
         let content = UNMutableNotificationContent()
         content.title = "Take Pills"
@@ -50,24 +50,49 @@ class NotificationManager :NSObject {
         
         
         for time in intakes {
-            let components = Calendar.current.dateComponents([.hour,.minute,.second,.nanosecond ], from:  time )
+            print("From Schedule Function:")
+            print(time.asString())
             
-            let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+            let components = Calendar.current.dateComponents([.hour,.minute], from:  time)
+            
+            let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
             let id = UUID().uuidString
             let request = UNNotificationRequest(identifier: id, content: content, trigger: trigger)
+            print("Request:")
+            print(request)
+            // adding Notfication to notification View Model
             
+            let notification = NotificationModel(context: CoreDataManager.shared.viewContext)
+            notification.medicineId = medicineId
+            notification.notificationId = id
+            notification.medicine  = medicine
+            
+            Medicine.save()
              
             try? await notificationCenter.add(request)
         }
         
     }
     
+    func getAllPendingNotification() {
+        notificationCenter.getPendingNotificationRequests { request in
+            print(request)
+        }
+    }
     func getDeliveredNotification(){
         notificationCenter.getDeliveredNotifications { (notifications) in
             for notification:UNNotification in notifications {
                 print(notification.request.identifier)
             }
         }
+    }
+    
+    func removeNotifciationWithId(id:[String]) {
+        notificationCenter.removePendingNotificationRequests(withIdentifiers: id)
+    }
+    
+    func removeAllPendingNotification() {
+        notificationCenter.removeAllPendingNotificationRequests()
     }
     
     func removeAllDelviredNotification() {
@@ -84,5 +109,6 @@ extension NotificationManager:UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification) async -> UNNotificationPresentationOptions {
         return [.banner,.sound,.badge]
     }
-
+    
+    
 }
