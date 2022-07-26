@@ -23,8 +23,6 @@
 		D4BE4D84288FA489000D03CB /* RemainingPillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D83288FA489000D03CB /* RemainingPillsView.swift */; };
 		D4BE4D86288FAF85000D03CB /* Intakes+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D85288FAF85000D03CB /* Intakes+Extension.swift */; };
 		D4BE4D8A288FB454000D03CB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D89288FB454000D03CB /* Date+Extension.swift */; };
-		D4BE4D8F288FC095000D03CB /* Medicine+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D8B288FC094000D03CB /* Medicine+CoreDataClass.swift */; };
-		D4BE4D90288FC095000D03CB /* Medicine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D8C288FC095000D03CB /* Medicine+CoreDataProperties.swift */; };
 		D4BE4D91288FC095000D03CB /* Intake+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D8D288FC095000D03CB /* Intake+CoreDataClass.swift */; };
 		D4BE4D92288FC095000D03CB /* Intake+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D8E288FC095000D03CB /* Intake+CoreDataProperties.swift */; };
 		D4BE4D94288FD709000D03CB /* MedicineDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D93288FD709000D03CB /* MedicineDetailScreen.swift */; };
@@ -34,6 +32,10 @@
 		D4BE4D9C289016AE000D03CB /* History+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D9A289016AE000D03CB /* History+CoreDataProperties.swift */; };
 		D4BE4D9E289016BF000D03CB /* History+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D9D289016BF000D03CB /* History+Extension.swift */; };
 		D4BE4DA0289018AA000D03CB /* HistoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D9F289018AA000D03CB /* HistoryListViewModel.swift */; };
+		D4D171922890656700DC6DF8 /* NotificationModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D171912890656700DC6DF8 /* NotificationModel+Extension.swift */; };
+		D4D17195289065B600DC6DF8 /* Medicine+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D17193289065B600DC6DF8 /* Medicine+CoreDataClass.swift */; };
+		D4D17196289065B600DC6DF8 /* Medicine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D17194289065B600DC6DF8 /* Medicine+CoreDataProperties.swift */; };
+		D4D1719828906B0500DC6DF8 /* AddNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D1719728906B0500DC6DF8 /* AddNotificationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +56,6 @@
 		D4BE4D83288FA489000D03CB /* RemainingPillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingPillsView.swift; sourceTree = "<group>"; };
 		D4BE4D85288FAF85000D03CB /* Intakes+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intakes+Extension.swift"; sourceTree = "<group>"; };
 		D4BE4D89288FB454000D03CB /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		D4BE4D8B288FC094000D03CB /* Medicine+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medicine+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D4BE4D8C288FC095000D03CB /* Medicine+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medicine+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D4BE4D8D288FC095000D03CB /* Intake+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intake+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D4BE4D8E288FC095000D03CB /* Intake+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intake+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D4BE4D93288FD709000D03CB /* MedicineDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDetailScreen.swift; sourceTree = "<group>"; };
@@ -65,6 +65,10 @@
 		D4BE4D9A289016AE000D03CB /* History+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D4BE4D9D289016BF000D03CB /* History+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+Extension.swift"; sourceTree = "<group>"; };
 		D4BE4D9F289018AA000D03CB /* HistoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListViewModel.swift; sourceTree = "<group>"; };
+		D4D171912890656700DC6DF8 /* NotificationModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationModel+Extension.swift"; sourceTree = "<group>"; };
+		D4D17193289065B600DC6DF8 /* Medicine+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medicine+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D4D17194289065B600DC6DF8 /* Medicine+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medicine+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D4D1719728906B0500DC6DF8 /* AddNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotificationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,15 +128,16 @@
 		D4BE4D44288E7F88000D03CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D4D17193289065B600DC6DF8 /* Medicine+CoreDataClass.swift */,
+				D4D17194289065B600DC6DF8 /* Medicine+CoreDataProperties.swift */,
 				D4BE4D99289016AE000D03CB /* History+CoreDataClass.swift */,
 				D4BE4D9A289016AE000D03CB /* History+CoreDataProperties.swift */,
-				D4BE4D8B288FC094000D03CB /* Medicine+CoreDataClass.swift */,
-				D4BE4D8C288FC095000D03CB /* Medicine+CoreDataProperties.swift */,
 				D4BE4D8D288FC095000D03CB /* Intake+CoreDataClass.swift */,
 				D4BE4D8E288FC095000D03CB /* Intake+CoreDataProperties.swift */,
 				D4BE4D77288ED1B3000D03CB /* Medicine+Extension.swift */,
 				D4BE4D85288FAF85000D03CB /* Intakes+Extension.swift */,
 				D4BE4D9D289016BF000D03CB /* History+Extension.swift */,
+				D4D171912890656700DC6DF8 /* NotificationModel+Extension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				D4BE4D7B288ED237000D03CB /* MedicineListViewModel.swift */,
 				D4BE4D97288FE960000D03CB /* AddHistoryViewModel.swift */,
 				D4BE4D9F289018AA000D03CB /* HistoryListViewModel.swift */,
+				D4D1719728906B0500DC6DF8 /* AddNotificationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -258,12 +264,14 @@
 				D4BE4D92288FC095000D03CB /* Intake+CoreDataProperties.swift in Sources */,
 				D4BE4D76288EC84A000D03CB /* PillsAppModel.xcdatamodeld in Sources */,
 				D4BE4D9E289016BF000D03CB /* History+Extension.swift in Sources */,
-				D4BE4D8F288FC095000D03CB /* Medicine+CoreDataClass.swift in Sources */,
+				D4D171922890656700DC6DF8 /* NotificationModel+Extension.swift in Sources */,
 				D4BE4D78288ED1B3000D03CB /* Medicine+Extension.swift in Sources */,
 				D4BE4D80288EFC53000D03CB /* NotificationManager.swift in Sources */,
 				D4BE4D39288E7F78000D03CB /* ContentView.swift in Sources */,
+				D4D1719828906B0500DC6DF8 /* AddNotificationViewModel.swift in Sources */,
 				D4BE4D91288FC095000D03CB /* Intake+CoreDataClass.swift in Sources */,
 				D4BE4D7E288ED61E000D03CB /* AddMedicineScreen.swift in Sources */,
+				D4D17195289065B600DC6DF8 /* Medicine+CoreDataClass.swift in Sources */,
 				D4BE4D86288FAF85000D03CB /* Intakes+Extension.swift in Sources */,
 				D4BE4D96288FDB83000D03CB /* MedicineHistoryScreen.swift in Sources */,
 				D4BE4D9B289016AE000D03CB /* History+CoreDataClass.swift in Sources */,
@@ -271,12 +279,12 @@
 				D4BE4D9C289016AE000D03CB /* History+CoreDataProperties.swift in Sources */,
 				D4BE4D98288FE960000D03CB /* AddHistoryViewModel.swift in Sources */,
 				D4BE4DA0289018AA000D03CB /* HistoryListViewModel.swift in Sources */,
+				D4D17196289065B600DC6DF8 /* Medicine+CoreDataProperties.swift in Sources */,
 				D4BE4D94288FD709000D03CB /* MedicineDetailScreen.swift in Sources */,
 				D4BE4D84288FA489000D03CB /* RemainingPillsView.swift in Sources */,
 				D4BE4D37288E7F78000D03CB /* PillsTrackerApp.swift in Sources */,
 				D4BE4D7C288ED237000D03CB /* MedicineListViewModel.swift in Sources */,
 				D4BE4D7A288ED22F000D03CB /* AddMedicineViewModel.swift in Sources */,
-				D4BE4D90288FC095000D03CB /* Medicine+CoreDataProperties.swift in Sources */,
 				D4BE4D73288EC826000D03CB /* CoreDataManager.swift in Sources */,
 				D4BE4D51288E8189000D03CB /* MedicineListScreen.swift in Sources */,
 			);

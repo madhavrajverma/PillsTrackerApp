@@ -27,13 +27,25 @@ struct MedicineDetailScreen: View {
                 }
             }
             Button(action: {
-                medicineListVM.updateDosageAndDays(medVM: medicine)
-                addHistoryVM.saveHistory(medVM: medicine)
+                
+                var med:MedicineViewModel
+                if Int(medicine.count)!  == 1 {
+                    med = medicine
+                    medicineListVM.deleteMedecine(medVM: medicine)
+                    addHistoryVM.saveHistory(medVM: med)
+                } else {
+                    medicineListVM.updateDosageAndDays(medVM: medicine)
+                    addHistoryVM.saveHistory(medVM: medicine)
+                }
+                
+               
+                medicineListVM.fetchAllMedicines()
+                
             }) {
                 Text("Take")
                     .font(.headline)
                     .foregroundColor(.orange)
-            }.disabled(Int(medicine.count) == 0)
+            }.disabled(Int(medicine.count)! < 0)
         }
         .onAppear {
             medicineListVM.fetchAllIntakes(medicine: medicine)

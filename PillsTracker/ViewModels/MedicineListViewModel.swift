@@ -35,9 +35,7 @@ class MedicineListViewModel: ObservableObject {
         }
         
         let dosagesCount =  Int16(count) - 1
-        if dosagesCount <= 0 {
-            deleteMedecine(medVM: medVM)
-        }
+        
         medicien?.count = dosagesCount
         
         if freq == .once {
@@ -49,7 +47,6 @@ class MedicineListViewModel: ObservableObject {
        
         
         Medicine.save()
-        fetchAllMedicines()
     }
     
     func deleteMedecine(medVM:MedicineViewModel) {

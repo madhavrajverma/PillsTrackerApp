@@ -16,13 +16,14 @@ extension Medicine {
         return NSFetchRequest<Medicine>(entityName: "Medicine")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var type: String?
-    @NSManaged public var days: Int16
     @NSManaged public var count: Int16
+    @NSManaged public var days: Int16
     @NSManaged public var desc: String?
     @NSManaged public var freq: String?
-    @NSManaged public var intakes: Array<Intake>?
+    @NSManaged public var name: String?
+    @NSManaged public var type: String?
+    @NSManaged public var intakes: NSSet?
+    @NSManaged public var notifications: NSSet?
 
 }
 
@@ -36,10 +37,27 @@ extension Medicine {
     @NSManaged public func removeFromIntakes(_ value: Intake)
 
     @objc(addIntakes:)
-    @NSManaged public func addToIntakes(_ values: Array<Intake>)
+    @NSManaged public func addToIntakes(_ values: NSSet)
 
     @objc(removeIntakes:)
-    @NSManaged public func removeFromIntakes(_ values: Array<Intake>)
+    @NSManaged public func removeFromIntakes(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for notifications
+extension Medicine {
+
+    @objc(addNotificationsObject:)
+    @NSManaged public func addToNotifications(_ value: NotificationModel)
+
+    @objc(removeNotificationsObject:)
+    @NSManaged public func removeFromNotifications(_ value: NotificationModel)
+
+    @objc(addNotifications:)
+    @NSManaged public func addToNotifications(_ values: NSSet)
+
+    @objc(removeNotifications:)
+    @NSManaged public func removeFromNotifications(_ values: NSSet)
 
 }
 
