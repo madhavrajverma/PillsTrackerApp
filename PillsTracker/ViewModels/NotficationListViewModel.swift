@@ -14,7 +14,6 @@ class NotificationListViewModel :ObservableObject {
      
     func fetchAllNotfications(medVM:MedicineViewModel) {
         self.notifcations = NotificationModel.fetchAllNotifications(id: medVM.medicineId).map(NotificationViewModel.init)
-        print(self.notifcations)
     }
     
     func deleteAllNotification() {

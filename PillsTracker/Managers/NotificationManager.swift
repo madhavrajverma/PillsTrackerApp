@@ -50,16 +50,14 @@ class NotificationManager :NSObject {
         
         
         for time in intakes {
-            print("From Schedule Function:")
-            print(time.asString())
             
             let components = Calendar.current.dateComponents([.hour,.minute], from:  time)
             
             let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
             let id = UUID().uuidString
             let request = UNNotificationRequest(identifier: id, content: content, trigger: trigger)
-            print("Request:")
-            print(request)
+
+            
             // adding Notfication to notification View Model
             
             let notification = NotificationModel(context: CoreDataManager.shared.viewContext)
