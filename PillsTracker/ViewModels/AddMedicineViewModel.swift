@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Combine
+import SwiftUI
 
 
 enum MedicineType:String,CaseIterable {
@@ -13,7 +15,45 @@ enum MedicineType:String,CaseIterable {
     case capsule = "Capsule"
     case syrup = "Syrup"
     case injection = "Injection"
+    
+    var imageIcon:String {
+        switch self {
+        case .tablet:
+            return Constants.tabletIcon.rawValue
+        case .capsule:
+            return   Constants.capsuleIcon.rawValue
+        case .syrup:
+            return  Constants.syrupIcon.rawValue
+        case .injection:
+            return Constants.injectionIcon.rawValue
+        }
+    }
    
+    var image:String {
+        switch self {
+        case .tablet:
+            return Constants.tabletImage.rawValue
+        case .capsule:
+            return   Constants.capsuleImage.rawValue
+        case .syrup:
+            return  Constants.syrupImage.rawValue
+        case .injection:
+            return Constants.injectionImage.rawValue
+        }
+    }
+    
+    var background:Color {
+        switch self {
+        case .tablet:
+            return Color.tabletBackground
+        case .capsule:
+            return  Color.capsuleBackground
+        case .syrup:
+            return  Color.syrupBackground
+        case .injection:
+            return Color.injectionBackground
+        }
+    }
 }
 
 enum Frequency: String , CaseIterable {
@@ -27,13 +67,31 @@ class AddMedicineViewModel : ObservableObject {
     @Published var name:String = ""
     @Published var days:String = ""
     @Published var description:String = ""
+    @Published var dosages:String = ""
     @Published var frequency: Frequency = .once
     @Published var type:MedicineType = .tablet
     
+    
+    // For Disabling Button
+    
+    @Published var isNameValid:String = ""
+    @Published var isDaysValid:String = ""
+    @Published var isDescriptionValid:String = ""
+    @Published var isDosagesValid:String = ""
+    
+    @Published var addButtonDisbaled = false
     // For Intakes
     @Published var intake:Date = Date()
     @Published var intake1:Date = Date()
     @Published var intake2:Date = Date()
+    
+    private var cancellableSet: Set<AnyCancellable> = []
+    
+//    if !name.isEmpty && !days.isEmpty && !description.isEmpty && !dosages.isEmpty {
+//        return false
+//    }
+//    return true
+    
     
     var intaksArray:[Date] = []
     
@@ -47,6 +105,7 @@ class AddMedicineViewModel : ObservableObject {
         medicine.medicineType = type
         medicine.desc = description
         medicine.frequency = frequency
+        medicine.dosages = dosages
         
         if frequency == .once {
             let take = Intake(context: CoreDataManager.shared.viewContext)

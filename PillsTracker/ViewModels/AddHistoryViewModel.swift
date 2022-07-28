@@ -16,6 +16,7 @@ class AddHistoryViewModel:ObservableObject {
         history.desc  = medVM.desc
         history.count = Int16(medVM.count) ?? 0
         history.days = Int16(medVM.days)
+        history.medicineType = medVM.type
         history.date = Date()
         History.save()
     }

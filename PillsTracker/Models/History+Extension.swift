@@ -10,6 +10,12 @@ import CoreData
 
 extension History {
     
+    var medicineType: MedicineType {
+        get { return MedicineType.init(rawValue: String(type ?? "")) ?? .tablet}
+        set { type = String(newValue.rawValue) }
+    }
+    
+    
     static func save() {
         do {
             try CoreDataManager.shared.viewContext.save()

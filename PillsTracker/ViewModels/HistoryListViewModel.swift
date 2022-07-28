@@ -48,5 +48,8 @@ struct HistoryViewModel  {
     var count : String {
         return String(describing: history.count)
     }
+    var type:MedicineType {
+        return history.medicineType
+    }
     
 }

@@ -21,6 +21,7 @@ extension History {
     @NSManaged public var count: Int16
     @NSManaged public var days: Int16
     @NSManaged public var date:Date?
+    @NSManaged public var type: String?
 
 }
 

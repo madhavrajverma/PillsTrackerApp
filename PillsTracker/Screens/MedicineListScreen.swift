@@ -14,29 +14,56 @@ struct MedicineListScreen: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(medicineListVM.medicines,id:\.medicineId) { medicine in
-                    NavigationLink(destination: MedicineDetailScreen(medicineListVM: medicineListVM, notficationVM: notficationVM, medicine: medicine)) {
-                        Text(medicine.name)
+            
+            ZStack(alignment:.bottomTrailing) {
+                ScrollView(.vertical,showsIndicators: false) {
+                    VStack {
+                         HomeHeaderView()
+                        
+                        HStack {
+                            Text("Your Medicines")
+                                .bold()
+                                .font(.title2)
+                                Spacer()
+                        }
+                        .padding()
+                        
+                        if medicineListVM.medicines.isEmpty {
+                            EmptyStateView(title: "No Medicine Found", subtitle: "Add New Medicine")
+                                .padding(.vertical)
+                        } else {
+                            ForEach(medicineListVM.medicines,id:\.medicineId) { medicine  in
+                                NavigationLink(destination: MedicineDetailScreenView(medicineListVM: medicineListVM, notficationVM: notficationVM,medicine: medicine)) {
+                                    MedicineRowView(medicine: medicine)
+                                }
+                            }
+                        }
+                                
+                        
                     }
-                }.onDelete(perform: deleteMedicine)
-                    
+                }
+                    .padding()
+                Button(action:{
+                    addMedicineScreen = true
+                }) {
+                    Image(systemName: "plus")
+                        .resizable()
+                        .renderingMode(.template)
+                        .frame(width: 32, height: 32)
+                        .padding()
+                }.background(Color.btnColor)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .padding()
+                
             }
+            
             .sheet(isPresented: $addMedicineScreen,onDismiss: {
                 medicineListVM.fetchAllMedicines()
             }, content: {
                 AddMedicineScreen()
             })
-            .navigationTitle("Medicines")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {addMedicineScreen = true}) {
-                        Image(systemName: "plus")
-                            .font(.title)
-                            .foregroundColor(.orange)
-                    }
-                }
-            }
+            .navigationTitle("MedTake")
             .onAppear {
                 medicineListVM.fetchAllMedicines()
                 NotificationManager.instances.removeAllDelviredNotification()
@@ -45,16 +72,16 @@ struct MedicineListScreen: View {
         }
     }
     
-    private func deleteMedicine(at indexSet:IndexSet) {
-        indexSet.forEach { index in
-            let medicine = medicineListVM.medicines[index]
-            notficationVM.fetchAllNotfications(medVM: medicine)
-            notficationVM.deleteAllNotification()
-            medicineListVM.deleteMedecine(medVM: medicine)
-            medicineListVM.fetchAllMedicines()
-            
-        }
-    }
+//    private func deleteMedicine(at indexSet:IndexSet) {
+//        indexSet.forEach { index in
+//            let medicine = medicineListVM.medicines[index]
+//            notficationVM.fetchAllNotfications(medVM: medicine)
+//            notficationVM.deleteAllNotification()
+//            medicineListVM.deleteMedecine(medVM: medicine)
+//            medicineListVM.fetchAllMedicines()
+//
+//        }
+//    }
 }
 
 struct MedicineListScreen_Previews: PreviewProvider {
@@ -64,3 +91,4 @@ struct MedicineListScreen_Previews: PreviewProvider {
         MedicineListScreen()
     }
 }
+

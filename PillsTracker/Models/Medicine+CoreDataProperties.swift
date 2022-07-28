@@ -19,6 +19,7 @@ extension Medicine {
     @NSManaged public var count: Int16
     @NSManaged public var days: Int16
     @NSManaged public var desc: String?
+    @NSManaged public var dosages:String
     @NSManaged public var freq: String?
     @NSManaged public var name: String?
     @NSManaged public var type: String?

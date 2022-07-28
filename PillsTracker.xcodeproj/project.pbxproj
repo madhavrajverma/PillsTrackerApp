@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40831AA2892E8B500E5D4AB /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831A92892E8B500E5D4AB /* Color+Extension.swift */; };
+		D40831AD2892EE0700E5D4AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831AC2892EE0700E5D4AB /* Constants.swift */; };
+		D40831B12892EFE500E5D4AB /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831B02892EFE500E5D4AB /* HomeHeaderView.swift */; };
+		D40831B32892F3B100E5D4AB /* MedicineRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831B22892F3B100E5D4AB /* MedicineRowView.swift */; };
+		D40831B52892F7B900E5D4AB /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831B42892F7B900E5D4AB /* EmptyStateView.swift */; };
+		D40831B72892FC7600E5D4AB /* MedicineTextDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831B62892FC7600E5D4AB /* MedicineTextDetailView.swift */; };
+		D40831B92892FD3600E5D4AB /* MedicineDetailScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831B82892FD3600E5D4AB /* MedicineDetailScreenView.swift */; };
+		D40831BB2892FE4700E5D4AB /* MedicineTextDetailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831BA2892FE4700E5D4AB /* MedicineTextDetailView2.swift */; };
+		D40831C02893049500E5D4AB /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831BF2893049500E5D4AB /* CustomAlertView.swift */; };
+		D40831C428930C3500E5D4AB /* PTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831C328930C3500E5D4AB /* PTTextField.swift */; };
+		D40831C928932E4400E5D4AB /* ButtomViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831C828932E4400E5D4AB /* ButtomViewModifier.swift */; };
+		D40831CC2893328300E5D4AB /* MedicineHistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831CB2893328300E5D4AB /* MedicineHistoryRowView.swift */; };
 		D4BE4D37288E7F78000D03CB /* PillsTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D36288E7F78000D03CB /* PillsTrackerApp.swift */; };
 		D4BE4D39288E7F78000D03CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D38288E7F78000D03CB /* ContentView.swift */; };
 		D4BE4D3B288E7F7B000D03CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BE4D3A288E7F7B000D03CB /* Assets.xcassets */; };
@@ -39,6 +51,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D40831A92892E8B500E5D4AB /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		D40831AC2892EE0700E5D4AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D40831B02892EFE500E5D4AB /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		D40831B22892F3B100E5D4AB /* MedicineRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineRowView.swift; sourceTree = "<group>"; };
+		D40831B42892F7B900E5D4AB /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		D40831B62892FC7600E5D4AB /* MedicineTextDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTextDetailView.swift; sourceTree = "<group>"; };
+		D40831B82892FD3600E5D4AB /* MedicineDetailScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDetailScreenView.swift; sourceTree = "<group>"; };
+		D40831BA2892FE4700E5D4AB /* MedicineTextDetailView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTextDetailView2.swift; sourceTree = "<group>"; };
+		D40831BF2893049500E5D4AB /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		D40831C128930B6500E5D4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D40831C328930C3500E5D4AB /* PTTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTextField.swift; sourceTree = "<group>"; };
+		D40831C828932E4400E5D4AB /* ButtomViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomViewModifier.swift; sourceTree = "<group>"; };
+		D40831CB2893328300E5D4AB /* MedicineHistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineHistoryRowView.swift; sourceTree = "<group>"; };
 		D4BE4D33288E7F78000D03CB /* PillsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BE4D36288E7F78000D03CB /* PillsTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsTrackerApp.swift; sourceTree = "<group>"; };
 		D4BE4D38288E7F78000D03CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +107,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D40831AB2892EDFC00E5D4AB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D40831AC2892EE0700E5D4AB /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D40831BC2892FEEC00E5D4AB /* MedicineDetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D40831B62892FC7600E5D4AB /* MedicineTextDetailView.swift */,
+				D40831B82892FD3600E5D4AB /* MedicineDetailScreenView.swift */,
+				D40831BA2892FE4700E5D4AB /* MedicineTextDetailView2.swift */,
+			);
+			path = MedicineDetailScreen;
+			sourceTree = "<group>";
+		};
+		D40831C728932E3400E5D4AB /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				D40831C828932E4400E5D4AB /* ButtomViewModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		D40831CA2893320100E5D4AB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		D4BE4D2A288E7F78000D03CB = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +159,9 @@
 		D4BE4D35288E7F78000D03CB /* PillsTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D40831C728932E3400E5D4AB /* ViewModifiers */,
+				D40831C128930B6500E5D4AB /* Info.plist */,
+				D40831AB2892EDFC00E5D4AB /* Constants */,
 				D4BE4D81288EFCD9000D03CB /* alarm.mp3 */,
 				D4BE4D48288E7F9C000D03CB /* Managers */,
 				D4BE4D49288E7FA7000D03CB /* Extension */,
@@ -168,7 +229,15 @@
 		D4BE4D47288E7F98000D03CB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D40831CA2893320100E5D4AB /* Onboarding */,
+				D40831BC2892FEEC00E5D4AB /* MedicineDetailScreen */,
 				D4BE4D83288FA489000D03CB /* RemainingPillsView.swift */,
+				D40831B02892EFE500E5D4AB /* HomeHeaderView.swift */,
+				D40831B22892F3B100E5D4AB /* MedicineRowView.swift */,
+				D40831B42892F7B900E5D4AB /* EmptyStateView.swift */,
+				D40831BF2893049500E5D4AB /* CustomAlertView.swift */,
+				D40831C328930C3500E5D4AB /* PTTextField.swift */,
+				D40831CB2893328300E5D4AB /* MedicineHistoryRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				D4BE4D89288FB454000D03CB /* Date+Extension.swift */,
+				D40831A92892E8B500E5D4AB /* Color+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -263,15 +333,21 @@
 			files = (
 				D4BE4D92288FC095000D03CB /* Intake+CoreDataProperties.swift in Sources */,
 				D4BE4D76288EC84A000D03CB /* PillsAppModel.xcdatamodeld in Sources */,
+				D40831B12892EFE500E5D4AB /* HomeHeaderView.swift in Sources */,
 				D4BE4D9E289016BF000D03CB /* History+Extension.swift in Sources */,
 				D4D171922890656700DC6DF8 /* NotificationModel+Extension.swift in Sources */,
+				D40831B32892F3B100E5D4AB /* MedicineRowView.swift in Sources */,
 				D4BE4D78288ED1B3000D03CB /* Medicine+Extension.swift in Sources */,
 				D4BE4D80288EFC53000D03CB /* NotificationManager.swift in Sources */,
+				D40831B72892FC7600E5D4AB /* MedicineTextDetailView.swift in Sources */,
+				D40831C928932E4400E5D4AB /* ButtomViewModifier.swift in Sources */,
 				D4BE4D39288E7F78000D03CB /* ContentView.swift in Sources */,
+				D40831B92892FD3600E5D4AB /* MedicineDetailScreenView.swift in Sources */,
 				D4BE4D91288FC095000D03CB /* Intake+CoreDataClass.swift in Sources */,
 				D4BE4D7E288ED61E000D03CB /* AddMedicineScreen.swift in Sources */,
 				D4D1719A28906F4500DC6DF8 /* NotficationListViewModel.swift in Sources */,
 				D4D17195289065B600DC6DF8 /* Medicine+CoreDataClass.swift in Sources */,
+				D40831AD2892EE0700E5D4AB /* Constants.swift in Sources */,
 				D4BE4D86288FAF85000D03CB /* Intakes+Extension.swift in Sources */,
 				D4BE4D96288FDB83000D03CB /* MedicineHistoryScreen.swift in Sources */,
 				D4BE4D9B289016AE000D03CB /* History+CoreDataClass.swift in Sources */,
@@ -279,9 +355,15 @@
 				D4BE4D9C289016AE000D03CB /* History+CoreDataProperties.swift in Sources */,
 				D4BE4D98288FE960000D03CB /* AddHistoryViewModel.swift in Sources */,
 				D4BE4DA0289018AA000D03CB /* HistoryListViewModel.swift in Sources */,
+				D40831CC2893328300E5D4AB /* MedicineHistoryRowView.swift in Sources */,
+				D40831BB2892FE4700E5D4AB /* MedicineTextDetailView2.swift in Sources */,
 				D4D17196289065B600DC6DF8 /* Medicine+CoreDataProperties.swift in Sources */,
+				D40831B52892F7B900E5D4AB /* EmptyStateView.swift in Sources */,
+				D40831AA2892E8B500E5D4AB /* Color+Extension.swift in Sources */,
 				D4BE4D94288FD709000D03CB /* MedicineDetailScreen.swift in Sources */,
+				D40831C428930C3500E5D4AB /* PTTextField.swift in Sources */,
 				D4BE4D84288FA489000D03CB /* RemainingPillsView.swift in Sources */,
+				D40831C02893049500E5D4AB /* CustomAlertView.swift in Sources */,
 				D4BE4D37288E7F78000D03CB /* PillsTrackerApp.swift in Sources */,
 				D4BE4D7C288ED237000D03CB /* MedicineListViewModel.swift in Sources */,
 				D4BE4D7A288ED22F000D03CB /* AddMedicineViewModel.swift in Sources */,
@@ -417,9 +499,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PillsTracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PillsTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -445,9 +527,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PillsTracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PillsTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

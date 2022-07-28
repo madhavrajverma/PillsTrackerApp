@@ -89,6 +89,11 @@ struct MedicineViewModel {
     var freq:Frequency {
         return medicine.frequency
     }
+    
+    var dosages:String {
+        return medicine.dosages 
+    }
+    
 }
 
 

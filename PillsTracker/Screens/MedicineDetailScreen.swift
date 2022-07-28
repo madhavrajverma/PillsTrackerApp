@@ -22,6 +22,7 @@ struct MedicineDetailScreen: View {
                 Text("Remaining Dosages: \(String(describing: medicine.count))")
                 Text("MedicineType : \(medicine.type.rawValue)")
                 Text("Frequency : \(medicine.freq.rawValue)")
+               
                 ForEach(medicineListVM.intakes,id:\.intakeId) {
                     intake in
                     Text("Intake Time: \(intake.time)")
@@ -35,6 +36,7 @@ struct MedicineDetailScreen: View {
                     }
                 }
             }
+            
             Button(action: {
                 
                 var med:MedicineViewModel
