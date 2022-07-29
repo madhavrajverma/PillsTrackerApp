@@ -65,7 +65,7 @@ struct MedicineDetailScreenView: View {
                             }
                             
                             HStack {
-                                MedicineTextDetailView2(title: "Program:", subtitle: "\(medicine.days)")
+                                MedicineTextDetailView2(title: "Program:", subtitle: "Days: \(medicine.days)")
                                 Spacer()
                                 MedicineTextDetailView2(title: "Dosages:", subtitle: "\(medicine.dosages)")
                             }
@@ -91,8 +91,7 @@ struct MedicineDetailScreenView: View {
         }
     }
     
-    
-   
+    // Methods: 
     var takePillButton: some View {
         
         Button(action: {
@@ -117,13 +116,8 @@ struct MedicineDetailScreenView: View {
             
         }) {
             Text("Take Pill")
-                .font(.body)
                 .fontWeight(.bold)
-                .foregroundColor(.white)
-                .padding()
-                .frame(width:120)
-                .background(Color.btnColor)
-                .cornerRadius(10)
+                .modifier(ButtonViewModifier(btnColor: Color.btnColor))
         }.disabled(Int(medicine.count)! < 0)
     }
     
@@ -135,13 +129,8 @@ struct MedicineDetailScreenView: View {
             medicineListVM.fetchAllMedicines()
         }) {
             Text("Delete")
-                .font(.body)
                 .fontWeight(.bold)
-                .foregroundColor(.white)
-                .padding()
-                .frame(width:120)
-                .background(Color.btnDelete)
-                .cornerRadius(10)
+                .modifier(ButtonViewModifier(btnColor: Color.btnDelete))
         }
     }
 }

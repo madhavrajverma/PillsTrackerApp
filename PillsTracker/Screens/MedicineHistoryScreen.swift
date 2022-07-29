@@ -37,11 +37,6 @@ struct MedicineHistoryScreen: View {
                         }
                     }
                     .padding(.horizontal)
-//                    List {
-//                        ForEach(historyVM.history,id:\.historyId) { history in
-//                            Text(history.name)
-//                        }.onDelete(perform: deleteHistory)
-//                    }
                 }
             }.navigationTitle("History")
                 .onAppear {
@@ -54,14 +49,6 @@ struct MedicineHistoryScreen: View {
         historyVM.deleteHistory(historyVM:history)
         historyVM.fetchAllHistory()
     }
-    
-//    private func deleteHistory(at indexSet:IndexSet) {
-//        indexSet.forEach { index in
-//            let history  = historyVM.history[index]
-//            historyVM.deleteHistory(historyVM: history)
-//            historyVM.fetchAllHistory()
-//        }
-//    }
 }
 
 struct MedicineHistoryScreen_Previews: PreviewProvider {

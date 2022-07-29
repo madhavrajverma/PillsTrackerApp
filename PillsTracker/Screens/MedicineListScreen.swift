@@ -71,17 +71,6 @@ struct MedicineListScreen: View {
             }
         }
     }
-    
-//    private func deleteMedicine(at indexSet:IndexSet) {
-//        indexSet.forEach { index in
-//            let medicine = medicineListVM.medicines[index]
-//            notficationVM.fetchAllNotfications(medVM: medicine)
-//            notficationVM.deleteAllNotification()
-//            medicineListVM.deleteMedecine(medVM: medicine)
-//            medicineListVM.fetchAllMedicines()
-//
-//        }
-//    }
 }
 
 struct MedicineListScreen_Previews: PreviewProvider {

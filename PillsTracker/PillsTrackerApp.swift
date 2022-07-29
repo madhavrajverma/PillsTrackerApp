@@ -10,12 +10,18 @@ import SwiftUI
 @main
 struct PillsTrackerApp: App {
     @Environment(\.scenePhase) var scenePhase
+    @AppStorage("onboarding") var onboarding = true
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .onAppear {
-                    NotificationManager.instances.requestAuthroization()
-                }
+            if onboarding {
+                OnBoardingHelperView()
+            }else {
+                ContentView()
+                    .onAppear {
+                        NotificationManager.instances.requestAuthroization()
+                    }
+            }
+                
         }.onChange(of: scenePhase) { _ in
             CoreDataManager.shared.save()
         }

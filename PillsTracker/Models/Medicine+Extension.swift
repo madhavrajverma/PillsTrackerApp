@@ -53,7 +53,7 @@ extension Medicine {
     
     static func getAllMedicines() -> [Medicine] {
         let request :NSFetchRequest<Medicine> = Medicine.fetchRequest()
-        //        request.sortDescriptors  = [NSSortDescriptor(key: "time", ascending: false)]
+        request.sortDescriptors  = [NSSortDescriptor(key: "time", ascending: false)]
         
         
         do {

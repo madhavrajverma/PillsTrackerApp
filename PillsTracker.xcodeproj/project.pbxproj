@@ -19,6 +19,8 @@
 		D40831C428930C3500E5D4AB /* PTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831C328930C3500E5D4AB /* PTTextField.swift */; };
 		D40831C928932E4400E5D4AB /* ButtomViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831C828932E4400E5D4AB /* ButtomViewModifier.swift */; };
 		D40831CC2893328300E5D4AB /* MedicineHistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831CB2893328300E5D4AB /* MedicineHistoryRowView.swift */; };
+		D40831CE2893832300E5D4AB /* OnBoardingHelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831CD2893832300E5D4AB /* OnBoardingHelperView.swift */; };
+		D40831D0289385B200E5D4AB /* OnbardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40831CF289385B200E5D4AB /* OnbardingView.swift */; };
 		D4BE4D37288E7F78000D03CB /* PillsTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D36288E7F78000D03CB /* PillsTrackerApp.swift */; };
 		D4BE4D39288E7F78000D03CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D38288E7F78000D03CB /* ContentView.swift */; };
 		D4BE4D3B288E7F7B000D03CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BE4D3A288E7F7B000D03CB /* Assets.xcassets */; };
@@ -37,7 +39,6 @@
 		D4BE4D8A288FB454000D03CB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D89288FB454000D03CB /* Date+Extension.swift */; };
 		D4BE4D91288FC095000D03CB /* Intake+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D8D288FC095000D03CB /* Intake+CoreDataClass.swift */; };
 		D4BE4D92288FC095000D03CB /* Intake+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D8E288FC095000D03CB /* Intake+CoreDataProperties.swift */; };
-		D4BE4D94288FD709000D03CB /* MedicineDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D93288FD709000D03CB /* MedicineDetailScreen.swift */; };
 		D4BE4D96288FDB83000D03CB /* MedicineHistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D95288FDB83000D03CB /* MedicineHistoryScreen.swift */; };
 		D4BE4D98288FE960000D03CB /* AddHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D97288FE960000D03CB /* AddHistoryViewModel.swift */; };
 		D4BE4D9B289016AE000D03CB /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE4D99289016AE000D03CB /* History+CoreDataClass.swift */; };
@@ -64,6 +65,8 @@
 		D40831C328930C3500E5D4AB /* PTTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTextField.swift; sourceTree = "<group>"; };
 		D40831C828932E4400E5D4AB /* ButtomViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomViewModifier.swift; sourceTree = "<group>"; };
 		D40831CB2893328300E5D4AB /* MedicineHistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineHistoryRowView.swift; sourceTree = "<group>"; };
+		D40831CD2893832300E5D4AB /* OnBoardingHelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingHelperView.swift; sourceTree = "<group>"; };
+		D40831CF289385B200E5D4AB /* OnbardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbardingView.swift; sourceTree = "<group>"; };
 		D4BE4D33288E7F78000D03CB /* PillsTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillsTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BE4D36288E7F78000D03CB /* PillsTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsTrackerApp.swift; sourceTree = "<group>"; };
 		D4BE4D38288E7F78000D03CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,7 +86,6 @@
 		D4BE4D89288FB454000D03CB /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		D4BE4D8D288FC095000D03CB /* Intake+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intake+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D4BE4D8E288FC095000D03CB /* Intake+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intake+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D4BE4D93288FD709000D03CB /* MedicineDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDetailScreen.swift; sourceTree = "<group>"; };
 		D4BE4D95288FDB83000D03CB /* MedicineHistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineHistoryScreen.swift; sourceTree = "<group>"; };
 		D4BE4D97288FE960000D03CB /* AddHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHistoryViewModel.swift; sourceTree = "<group>"; };
 		D4BE4D99289016AE000D03CB /* History+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -119,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				D40831B62892FC7600E5D4AB /* MedicineTextDetailView.swift */,
-				D40831B82892FD3600E5D4AB /* MedicineDetailScreenView.swift */,
 				D40831BA2892FE4700E5D4AB /* MedicineTextDetailView2.swift */,
 			);
 			path = MedicineDetailScreen;
@@ -136,6 +137,8 @@
 		D40831CA2893320100E5D4AB /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				D40831CD2893832300E5D4AB /* OnBoardingHelperView.swift */,
+				D40831CF289385B200E5D4AB /* OnbardingView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -218,9 +221,9 @@
 		D4BE4D46288E7F93000D03CB /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D40831B82892FD3600E5D4AB /* MedicineDetailScreenView.swift */,
 				D4BE4D50288E8189000D03CB /* MedicineListScreen.swift */,
 				D4BE4D7D288ED61E000D03CB /* AddMedicineScreen.swift */,
-				D4BE4D93288FD709000D03CB /* MedicineDetailScreen.swift */,
 				D4BE4D95288FDB83000D03CB /* MedicineHistoryScreen.swift */,
 			);
 			path = Screens;
@@ -341,6 +344,7 @@
 				D4BE4D80288EFC53000D03CB /* NotificationManager.swift in Sources */,
 				D40831B72892FC7600E5D4AB /* MedicineTextDetailView.swift in Sources */,
 				D40831C928932E4400E5D4AB /* ButtomViewModifier.swift in Sources */,
+				D40831D0289385B200E5D4AB /* OnbardingView.swift in Sources */,
 				D4BE4D39288E7F78000D03CB /* ContentView.swift in Sources */,
 				D40831B92892FD3600E5D4AB /* MedicineDetailScreenView.swift in Sources */,
 				D4BE4D91288FC095000D03CB /* Intake+CoreDataClass.swift in Sources */,
@@ -360,7 +364,7 @@
 				D4D17196289065B600DC6DF8 /* Medicine+CoreDataProperties.swift in Sources */,
 				D40831B52892F7B900E5D4AB /* EmptyStateView.swift in Sources */,
 				D40831AA2892E8B500E5D4AB /* Color+Extension.swift in Sources */,
-				D4BE4D94288FD709000D03CB /* MedicineDetailScreen.swift in Sources */,
+				D40831CE2893832300E5D4AB /* OnBoardingHelperView.swift in Sources */,
 				D40831C428930C3500E5D4AB /* PTTextField.swift in Sources */,
 				D4BE4D84288FA489000D03CB /* RemainingPillsView.swift in Sources */,
 				D40831C02893049500E5D4AB /* CustomAlertView.swift in Sources */,
@@ -504,6 +508,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +518,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -532,6 +537,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,7 +547,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
