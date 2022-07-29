@@ -143,6 +143,15 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		D40831D12893922900E5D4AB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D4BE4D38288E7F78000D03CB /* ContentView.swift */,
+				D4BE4D36288E7F78000D03CB /* PillsTrackerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		D4BE4D2A288E7F78000D03CB = {
 			isa = PBXGroup;
 			children = (
@@ -162,20 +171,19 @@
 		D4BE4D35288E7F78000D03CB /* PillsTracker */ = {
 			isa = PBXGroup;
 			children = (
-				D40831C728932E3400E5D4AB /* ViewModifiers */,
-				D40831C128930B6500E5D4AB /* Info.plist */,
-				D40831AB2892EDFC00E5D4AB /* Constants */,
 				D4BE4D81288EFCD9000D03CB /* alarm.mp3 */,
+				D40831AB2892EDFC00E5D4AB /* Constants */,
+				D40831C728932E3400E5D4AB /* ViewModifiers */,
 				D4BE4D48288E7F9C000D03CB /* Managers */,
 				D4BE4D49288E7FA7000D03CB /* Extension */,
 				D4BE4D44288E7F88000D03CB /* Models */,
 				D4BE4D45288E7F8C000D03CB /* ViewModels */,
 				D4BE4D47288E7F98000D03CB /* Views */,
 				D4BE4D46288E7F93000D03CB /* Screens */,
-				D4BE4D36288E7F78000D03CB /* PillsTrackerApp.swift */,
-				D4BE4D38288E7F78000D03CB /* ContentView.swift */,
+				D40831D12893922900E5D4AB /* App */,
 				D4BE4D3A288E7F7B000D03CB /* Assets.xcassets */,
 				D4BE4D74288EC84A000D03CB /* PillsAppModel.xcdatamodeld */,
+				D40831C128930B6500E5D4AB /* Info.plist */,
 				D4BE4D3C288E7F7B000D03CB /* Preview Content */,
 			);
 			path = PillsTracker;
